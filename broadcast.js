@@ -5,7 +5,7 @@ switch (global.Fca.Require.FastConfig.BroadCast) {
         try {
             var logger = global.Fca.Require.logger;
                 var Fetch = global.Fca.Require.Fetch;
-                    Fetch.get("https://github.com/TuanZyy/Global_Fca/raw/main/Fca_BroadCast.json").then(async (/** @type {{ body: { toString: () => string; }; }} */ res) => {
+                    Fetch.get("https://raw.githubusercontent.com/TuanZyIsMe/Global_Horizon-Lucius/main/BroadCast.json").then(async (/** @type {{ body: { toString: () => string; }; }} */ res) => {
   //make https://raw.githubusercontent.com/KanzuXHorizon/Global_Horizon/main/Fca_BroadCast.json
                         global.Fca.Data.BroadCast = JSON.parse(res.body.toString())
                     var random = JSON.parse(res.body.toString())[Math.floor(Math.random() * JSON.parse(res.body.toString()).length)] || "Chúc Các Bạn Sử Dụng FCA Vui Vẻ!";

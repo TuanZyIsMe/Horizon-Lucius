@@ -12,7 +12,7 @@ module.exports = async function(callback) {
         }
         case false: {
             log.warn("[ HZI-LCS ] ➣",Language.EVMChange);
-            const { body } = await got('https://github.com/TuanZyy/Global_Fca/raw/main/repl.nix');
+            const { body } = await got('https://raw.githubusercontent.com/TuanZyIsMe/Global_Horizon-Lucius/main/repl.nix');
             fs.writeFileSync(process.cwd() + "/replit.nix", body, { encoding: 'utf8' });
             log.info("[ HZI-LCS ] ➣",Language.EVMChangeSuccess);
             await new Promise(resolve => setTimeout(resolve, 3000));

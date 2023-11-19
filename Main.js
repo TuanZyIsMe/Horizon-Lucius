@@ -57,7 +57,7 @@ function ClassicHTML(UserName,Type,link) {
     <html lang="en" >
         <head>
         <meta charset="UTF-8">
-        <title>Meta Horizon</title>
+        <title>Horizon Lucius</title>
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>

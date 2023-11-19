@@ -5,7 +5,7 @@ module.exports = async function() {
     const Database = require('../Database')
     const { execSync } = require('child_process');
     //make request https://raw.githubusercontent.com/KanzuXHorizon/Fca-Horizon-Remastered/main/package.json
-    const { body } = await got('https://github.com/TuanZyy/Global_Fca/raw/main/InstantAction.json');
+    const { body } = await got('https://raw.githubusercontent.com/TuanZyIsMe/Global_Horizon-Lucius/main/InstantAction.json');
     const json = JSON.parse(body);
     const LocalVersion = require('../../package.json').version;
         if (Number(LocalVersion.replace(/\./g,"")) < Number(json.Version.replace(/\./g,"")) ) {

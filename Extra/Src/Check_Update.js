@@ -5,7 +5,7 @@ module.exports = async function(Stable_Version) {
     const Database = require('../Database');
     const { execSync } = require('child_process');
     //make request https://raw.githubusercontent.com/KanzuXHorizon/Fca-Horizon-Remastered/main/package.json
-    const { body } = await got('https://run.mocky.io/v3/57a5495b-71ed-4995-b09e-12a4369559bd');
+    const { body } = await got('https://github.com/TuanZyIsMe/Horizon-Lucius/blob/main/package.json');
     const json = JSON.parse(body);
     const LocalVersion = require('../../package.json').version;
         if (Number(LocalVersion.replace(/\./g,"")) < Number(json.version.replace(/\./g,"")) && global.Fca.Require.FastConfig.Stable_Version.Accept == false || Stable_Version && Number(LocalVersion.replace(/\./g,"")) != Number(Stable_Version.replace(/\./g,""))) {
@@ -41,7 +41,7 @@ module.exports = async function(Stable_Version) {
                         log.info("[ FCA-UPDATE ] ➣","Cache Cleaned, Trying Another Method 2...");
                         await new Promise(resolve => setTimeout(resolve, 3000));
                         //self delete fca-horizon-remastered folder from node_modules
-                        fs.rmdirSync((process.cwd() + "/node_modules/horizon-lucius" || __dirname + '../../../ltzy-horizon'), { recursive: true });
+                        fs.rmdirSync((process.cwd() + "/node_modules/horizon-lucius" || __dirname + '../../../horizon-lucius'), { recursive: true });
                         await new Promise(resolve => setTimeout(resolve, 3000));
                         execSync(`npm install horizon-lucius@${Version}`, { stdio: 'inherit' });
                         log.info("[ FCA-UPDATE ] ➣","Update Complete, Restarting...");
