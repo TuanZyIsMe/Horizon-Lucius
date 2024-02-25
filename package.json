@@ -1,12 +1,12 @@
 {
   "name": "horizon-lucius",
   "version": "1.0.1",
-  "description": "Facebook-Chat-API Protect and Deploy by Kanzu and HZI Team. Kem is redeveloped. Rename package is Meta Horizon and package supported ChatBot Messenger.",
+  "description": "Facebook-Chat-API Protect and Deploy by Kanzu and HZI Team. Haruka is redeveloped. Rename package is Meta Horizon and package supported ChatBot Messenger.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
-  "author": "Avery, David, Maude, Benjamin, UIRI, KanzuWakazaki, TuanZy",
+  "author": "Avery, David, Maude, Benjamin, UIRI, KanzuWakazaki, Haruka",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/KanzuXHorizon/Fca-Horizon-Remastered/issues"
@@ -89,8 +89,6 @@
     }
   },
   "keywords": [
-    "Fca horizon",
-    "fca-horizon-remastered",
     "horizon fca",
     "horizon",
     "horizon-lucius"
